@@ -1,6 +1,30 @@
 @charset "utf-8";
+/* CSS Document */
+
+/******************************
+
+[Table of Contents]
+
+1. Fonts
+2. Body and some general stuff
+3. Header
+4. Menu
+5. Home
+6. Contact
+7. Footer
+
+
+******************************/
+
+/***********
+1. Fonts
+***********/
+
 @import url('https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500,600,700|Allerta+Stencil');
 
+/*********************************
+2. Body and some general stuff
+*********************************/
 
 *
 {
@@ -329,6 +353,9 @@ section
 .rating_5 i:nth-child(4)::before{color: #fba40e;}
 .rating_5 i:nth-child(5)::before{color: #fba40e;}
 
+/*********************************
+3. Header
+*********************************/
 
 .header
 {
@@ -618,6 +645,10 @@ section
 	margin-top: 1px;
 }
 
+/*********************************
+6. Contact
+*********************************/
+
 .contact
 {
 	background: #FFFFFF;
@@ -795,6 +826,9 @@ section
 	height: calc(100% + 30px);
 }
 
+/*********************************
+7. Footer
+*********************************/
 
 .footer
 {

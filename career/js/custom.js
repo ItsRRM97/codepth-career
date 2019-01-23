@@ -3,6 +3,7 @@ $(document).ready(function()
 {
 	"use strict";
 
+
 	var header = $('.header');
 	var hamburgerBar = $('.hamburger_bar');
 	var hamburger = $('.hamburger');
@@ -28,6 +29,11 @@ $(document).ready(function()
 	initGallery();
 	initMenu();
 
+	/*
+
+	2. Set Header
+
+	*/
 
 	function setHeader()
 	{
@@ -43,6 +49,11 @@ $(document).ready(function()
 		}
 	}
 
+	/*
+
+	3. Init Menu
+
+	*/
 
 	function initMenu()
 	{
@@ -57,7 +68,28 @@ $(document).ready(function()
 		}
 	}
 
+	/*
 
+	4. Init Video
+
+	*/
+
+	function initVideo()
+	{
+		$(".vimeo").colorbox(
+		{
+			iframe:true,
+			innerWidth:640,
+			innerHeight:409,
+			maxWidth: '90%'
+		});
+	}
+
+	/*
+
+	5. Init Gallery
+
+	*/
 
 	function initGallery()
 	{

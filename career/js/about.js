@@ -1,10 +1,8 @@
 
+
 $(document).ready(function()
 {
 	"use strict";
-
-
-
 
 	var header = $('.header');
 	var hamburgerBar = $('.hamburger_bar');
@@ -31,7 +29,11 @@ $(document).ready(function()
 	initMenu();
 	initProgressBars();
 
+	/*
 
+	2. Set Header
+
+	*/
 
 	function setHeader()
 	{
@@ -47,7 +49,11 @@ $(document).ready(function()
 		}
 	}
 
+	/*
 
+	3. Init Menu
+
+	*/
 
 	function initMenu()
 	{
@@ -62,7 +68,11 @@ $(document).ready(function()
 		}
 	}
 
+	/*
 
+	4. Init Progress Bars
+
+	*/
 
 	function initProgressBars()
 	{

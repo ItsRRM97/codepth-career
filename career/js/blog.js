@@ -1,7 +1,9 @@
 
+
 $(document).ready(function()
 {
 	"use strict";
+
 
 	var header = $('.header');
 	var hamburgerBar = $('.hamburger_bar');
@@ -26,7 +28,11 @@ $(document).ready(function()
 
 	initMenu();
 
+	/*
 
+	2. Set Header
+
+	*/
 
 	function setHeader()
 	{
@@ -42,6 +48,11 @@ $(document).ready(function()
 		}
 	}
 
+	/*
+
+	3. Init Menu
+
+	*/
 
 	function initMenu()
 	{

@@ -1,30 +1,7 @@
 @charset "utf-8";
-/* CSS Document */
 
-/******************************
-
-[Table of Contents]
-
-1. Fonts
-2. Body and some general stuff
-3. Header
-4. Menu
-5. Home
-6. Blog
-7. Footer
-
-
-******************************/
-
-/***********
-1. Fonts
-***********/
 
 @import url('https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500,600,700|Allerta+Stencil');
-
-/*********************************
-2. Body and some general stuff
-*********************************/
 
 *
 {
@@ -646,83 +623,211 @@ section
 }
 
 /*********************************
-6. Blog
+6. Services
 *********************************/
 
-.blog
+.services
 {
+	padding-top: 42px;
+	padding-bottom: 34px;
 	background: #FFFFFF;
-	padding-top: 45px;
-	padding-bottom: 100px;
 }
-.blog_row
+.services_row
 {
-	margin-top: 100px;
+	margin-top: 87px;
 }
-.blog_col
+.service_col:nth-last-child(n+4)
 {
-	margin-bottom: 49px;
+	margin-bottom: 79px;
 }
-.blog_post_image
+.service_icon
 {
-	width: 100%;
+	width: 62px;
+	height: 62px;
 }
-.blog_post_image img
+.service_icon img
 {
 	max-width: 100%;
 }
-.blog_post_title
+.service_title
 {
-	margin-top: 20px;
-}
-.blog_post_title a
-{
+	padding-left: 37px;
 	font-size: 24px;
 	font-weight: 400;
 	color: #262626;
-	line-height: 1.1;
 }
-.blog_post_title a:hover
+.service_text
 {
-	color: #ff9711;
-}
-.blog_post_date
-{
-	margin-top: 4px;
-}
-.blog_post_date a
-{
-	font-size: 12px;
-	font-weight: 600;
-	text-transform: uppercase;
-	color: #ff9711;
-}
-.blog_post_text
-{
-	margin-top: 22px;
-}
-.blog_post_text p
-{
-	font-weight: 500;
-	color: #535353;
-}
-.blog_post_link
-{
-	margin-top: 36px;
-}
-.blog_post_link a
-{
-	font-size: 12px;
-	font-weight: 400;
-	color: #ff9711;
-}
-.blog_button
-{
-	margin-top: 46px;
+	margin-top: 17px;
 }
 
 /*********************************
-7. Footer
+7. Timetable
+*********************************/
+
+.timetable
+{
+	padding-top: 316px;
+	padding-bottom: 100px;
+	overflow: hidden;
+}
+.tt_overlay
+{
+	position: absolute;
+	top: -270px;
+	right: 0;
+	transform-origin: right bottom;
+	width: 130%;
+	height: 270px;
+	background: #FFFFFF;
+	transform: rotate(-8deg);
+}
+.timetable .section_title
+{
+	color: #FFFFFF;
+}
+.timetable_filtering
+{
+	margin-top: 69px;
+}
+.timetable_filtering ul li
+{
+	position: relative;
+	font-size: 16px;
+	font-weight: 500;
+	color: #FFFFFF;
+	cursor: pointer;
+	white-space: nowrap;
+	margin-bottom: 30px;
+}
+.timetable_filtering ul li:not(:last-of-type)
+{
+	margin-right: 59px;
+}
+.timetable_filtering ul li.active,
+.timetable_filtering ul li:hover
+{
+	color: #f98c00;
+}
+.timetable_filtering ul li.active::after
+{
+	display: block;
+	position: absolute;
+	left: -5px;
+	bottom: -8px;
+	width: calc(100% + 10px);
+	height: 2px;
+	background: #f98c00;
+	content: '';
+}
+.timetable_container
+{
+	margin-top: 62px;
+	width: calc(100% + 156px);
+	left: -78px;
+}
+.tt_day
+{
+	width: calc((100% - 48px) / 7);
+}
+.tt_title
+{
+	width: 100%;
+	height: 46px;
+	background: #ff9711;
+	text-align: center;
+	line-height: 46px;
+	font-size: 14px;
+	font-weight: 500;
+	color: #FFFFFF;
+	text-transform: uppercase;
+	margin-bottom: 17px;
+}
+.tt_class
+{
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 145px;
+	background: #FFFFFF;
+}
+.tt_class:not(:last-child)
+{
+	margin-bottom: 8px;
+}
+.tt_class.empty
+{
+	background: #565656;
+}
+.tt_class_title
+{
+	font-size: 16px;
+	font-weight: 600;
+	color: #262626;
+	line-height: 0.75;
+}
+.tt_class_instructor
+{
+	font-size: 12px;
+	font-weight: 500;
+	color: #535353;
+	line-height: 0.75;
+	margin-top: 16px;
+}
+.tt_class_time
+{
+	font-size: 24px;
+	font-weight: 600;
+	color: #ff9711;
+	line-height: 0.75;
+	margin-top: 28px;
+}
+
+/*********************************
+8. Extra
+*********************************/
+
+.extra
+{
+	padding-top: 106px;
+	padding-bottom: 134px;
+}
+.extra_content
+{
+	padding-left: 40px;
+	padding-right: 40px;
+}
+.extra_title
+{
+	font-family: 'Allerta Stencil', sans-serif;
+	font-size: 60px;
+	color: #FFFFFF;
+	line-height: 1.1;
+}
+.extra_text
+{
+	text-align: center;
+	margin-top: 32px;
+}
+.extra_text p
+{
+	color: #FFFFFF;
+	font-weight: 600;
+}
+.extra_button
+{
+	border: solid 1px #FFFFFF;
+	margin-top: 47px;
+}
+
+/*********************************
+9. Footer
 *********************************/
 
 .footer

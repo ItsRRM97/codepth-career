@@ -3,7 +3,6 @@ $(document).ready(function()
 {
 	"use strict";
 
-
 	var header = $('.header');
 	var hamburgerBar = $('.hamburger_bar');
 	var hamburger = $('.hamburger');
@@ -29,6 +28,11 @@ $(document).ready(function()
 	initMenu();
 	initGoogleMap();
 
+	/*
+
+	2. Set Header
+
+	*/
 
 	function setHeader()
 	{
@@ -44,6 +48,11 @@ $(document).ready(function()
 		}
 	}
 
+	/*
+
+	3. Init Menu
+
+	*/
 
 	function initMenu()
 	{
@@ -58,6 +67,11 @@ $(document).ready(function()
 		}
 	}
 
+	/*
+
+	4. Init Google Map
+
+	*/
 
 	function initGoogleMap()
 	{

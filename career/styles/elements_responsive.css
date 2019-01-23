@@ -54,10 +54,7 @@
 
 @media only screen and (max-width: 1280px)
 {
-	.about
-	{
-		padding-bottom: 142px;
-	}
+
 }
 
 /************
@@ -82,13 +79,21 @@
 	{
 		margin-left: 90px;
 	}
-	.about
+	.loader_col:nth-last-child(n+3)
 	{
-		padding-bottom: 0px;
+		margin-bottom: 60px;
 	}
-	.about_image
+	.milestone_col:nth-last-child(n+3)
 	{
-		max-width: 65%;
+		margin-bottom: 60px;
+	}
+	.service_col:nth-last-child(n+4)
+	{
+		margin-bottom: 0px;
+	}
+	.service_col:nth-last-child(n+3)
+	{
+		margin-bottom: 79px;
 	}
 }
 
@@ -128,47 +133,9 @@
 	{
 		display: none;
 	}
-	.box
+	.tabs_col
 	{
-		width: 100%;
-	}
-	.box:not(:last-child)
-	{
-		margin-bottom: 60px;
-	}
-	.about_background
-	{
-		position: relative;
-		bottom: auto;
-		right: auto;
-	}
-	.about_image
-	{
-		position: relative;
-		top: auto;
-		left: auto;
-		right: -20px;
-		max-width: 100%;
-	}
-	.about_image img
-	{
-		max-width: 100%;
-	}
-	.about_content
-	{
-		-webkit-transform: none;
-		-moz-transform: none;
-		-ms-transform: none;
-		-o-transform: none;
-		transform: none;
-	}
-	.team_col:not(:last-child)
-	{
-		margin-bottom: 120px;
-	}
-	.skills_col
-	{
-		margin-top: 100px;
+		margin-top: 80px;
 	}
 	.footer_nav ul li:not(:last-of-type)
 	{
@@ -223,9 +190,29 @@
 		font-size: 14px;
 		margin-top: -4px;
 	}
-	.home_button
+	.loader_col:nth-last-child(n+3)
 	{
-		margin-top: 37px;
+		margin-bottom: 0px;
+	}
+	.loader_col:not(:last-child)
+	{
+		margin-bottom: 60px;
+	}
+	.milestone_col:nth-last-child(n+3)
+	{
+		margin-bottom: 0px;
+	}
+	.milestone_col:not(:last-child)
+	{
+		margin-bottom: 60px;
+	}
+	.service_col:nth-last-child(n+3)
+	{
+		margin-bottom: 0px;
+	}
+	.service_col:not(:last-child)
+	{
+		margin-bottom: 79px;
 	}
 }
 
@@ -261,25 +248,13 @@
 	{
 		font-size: 48px;
 	}
-	.home_button
-	{
-		margin-top: 33px;
-	}
-	.home_button a
-	{
-		font-size: 14px;
-	}
 	.text_highlight
 	{
 		font-size: 15px;
 	}
-	.team
+	.google_map
 	{
-		padding-top: 244px;
-	}
-	.extra_title
-	{
-		font-size: 48px;
+		height: 350px;
 	}
 	.footer_content
 	{
